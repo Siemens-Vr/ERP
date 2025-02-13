@@ -29,54 +29,60 @@ export default function Login() {
   };
 
   return (
-    <div className={styles.container}>
-      <h1 className={styles.heading}>Log In</h1>
-      <form onSubmit={handleLogin} className={styles.formContainer}>
-        
-        {/* Email */}
-        <div className="mb-4">
-          <label className={styles.label}>Email</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            className={styles.input}
-          />
+      <div className={styles.container}>
+        <div className={styles.backgroundCircles}>
+          <div className={`${styles.circle} ${styles.circle1}`}></div>
+          <div className={`${styles.circle} ${styles.circle2}`}></div>
+          <div className={`${styles.circle} ${styles.circle3}`}></div>
         </div>
 
-        {/* Password with Eye Icon */}
-        <div className={`mb-4 ${styles.relative}`}>
-          <label className={styles.label}>Password</label>
-          <input
-            type={showPassword ? "text" : "password"}
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-            className={styles.input}
-          />
-          <span className={styles.eyeIcon} onClick={() => setShowPassword(!showPassword)}>
-            {showPassword ? <FaEyeSlash /> : <FaEye />}
+        <h1 className={styles.heading}>Log In</h1>
+        <form onSubmit={handleLogin} className={styles.formContainer}>
+
+          {/* Email */}
+          <div className="mb-4">
+            <label className={styles.label}>Email</label>
+            <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                className={styles.input}
+            />
+          </div>
+
+          {/* Password with Eye Icon */}
+          <div className={`mb-4 ${styles.relative}`}>
+            <label className={styles.label}>Password</label>
+            <input
+                type={showPassword ? "text" : "password"}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+                className={styles.input}
+            />
+            <span className={styles.eyeIcon} onClick={() => setShowPassword(!showPassword)}>
+            {showPassword ? <FaEyeSlash/> : <FaEye/>}
           </span>
-        </div>
+          </div>
 
-        <button type="submit" className={styles.button}>
-          Log In
-        </button>
+          <button type="submit" className={styles.button}>
+            Log In
+          </button>
 
-        <p className={styles.textCenter}>
-          Forgot password?{" "}
-          <a href="/pages/forgotPassword" className={styles.link}>
-            Reset here
-          </a>
-        </p>
-        <p className={styles.textCenter}>
-          I don't have an account?{" "}
-          <a href="/pages/signup" className={styles.link}>
-            Sign up
-          </a>
-        </p>
-      </form>
-    </div>
+          <p className={styles.textCenter}>
+            Forgot password?{" "}
+            <a href="/pages/forgotPassword" className={styles.link}>
+              Reset here
+            </a>
+          </p>
+          <p className={styles.textCenter}>
+            I don't have an account?{" "}
+            <a href="/pages/signup" className={styles.link}>
+              Sign up
+            </a>
+          </p>
+        </form>
+      </div>
   );
 }
