@@ -55,8 +55,55 @@
   top: 5px;
   left: -300px;
 }
+/*@media screen and (max-width: 1480px) and (max-height: 1080px) {
+  .circle1 {
+    width: 700px;
+    height: 700px;
+    left: -350px;
+    top: -30px;
+  }
 
-  
+  .circle2 {
+    width: 600px;
+    height: 600px;
+    left: -300px;
+    top: -20px;
+  }
+
+  .circle3 {
+    width: 500px;
+    height: 500px;
+    left: -250px;
+    top: 0px;
+  }
+}*/
+
+/* Responsive adjustments for smaller screens */
+@media screen and (min-width: 1200px) {
+  .circle1 {
+    width: 1100px;
+    height: 1200px;
+    left: -400px;
+    top: -30px;
+  }
+
+  .circle2 {
+    width: 950px;
+    height: 1100px;
+    left: -320px;
+    top: 0px;
+  }
+
+  .circle3 {
+    width: 850px;
+    height: 1050px;
+    left: -310px;
+    top: 25px;
+  }
+}
+
+
+
   .formContainer {
     background-color: white;
     padding: 1.5rem;
