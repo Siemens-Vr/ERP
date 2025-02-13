@@ -45,7 +45,7 @@
 /* Medium circle (teal) */
 .circle2 {
   width: 750px;
-  height: 780px;
+  height: 810px;
   background-color: #ff7211;
   bottom: -50px; /* Stick to bottom */
   right: -280px;
@@ -55,7 +55,7 @@
 /* Smallest circle (orange) */
 .circle3 {
   width: 700px;
-  height: 750px;
+  height: 800px;
   background-color: #1b9392;
   bottom: -55px; /* Stick to bottom */
   right: -280px;
@@ -89,24 +89,26 @@
   .circle1 {
     width: 1100px;
     height: 1200px;
-    left: -400px;
+    right: -400px; /* Move to the right */
     top: -30px;
   }
 
   .circle2 {
     width: 950px;
     height: 1100px;
-    left: -320px;
-    top: 0px;
+    right: -320px; /* Move to the right */
+    top: -25px;
   }
 
   .circle3 {
-    width: 850px;
+    width: 870px;
     height: 1050px;
-    left: -310px;
-    top: 25px;
+    right: -310px; /* Move to the right */
+    top: -14px;
+    bottom: 150px;
   }
 }
+
 /*
 @media screen and (min-width: 1800px) {
   .circle1 {
