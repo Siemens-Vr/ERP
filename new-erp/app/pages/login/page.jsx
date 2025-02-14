@@ -30,10 +30,19 @@ export default function Login() {
 
   return (
       <div className={styles.container}>
-        <div className={styles.backgroundCircles}>
-          <div className={`${styles.circle} ${styles.circle1}`}></div>
-          <div className={`${styles.circle} ${styles.circle2}`}></div>
-          <div className={`${styles.circle} ${styles.circle3}`}></div>
+        <div
+            className="absolute inset-y-0 right-0 w-full md:w-1/2 h-full overflow-hidden flex justify-end items-end z-10">
+          {/* Largest Circle (Light Blue) */}
+          <div
+              className="absolute w-[530px] h-[550px] md:w-[750px] md:h-[750px] lg:w-[1280px] lg:h-[1300px] bg-[#c6eff7] rounded-full top-0 bottom-0 right-[-350px] md:right-[-250px] lg:right-[-700px] m-auto"></div>
+
+          {/* Medium Circle (Orange) */}
+          <div
+              className="absolute w-[480px] h-[500px] md:w-[700px] md:h-[700px] lg:w-[1180px] lg:h-[1200px] bg-[#ff7211] rounded-full top-0 bottom-0 right-[-310px] md:right-[-220px] lg:right-[-650px] m-auto"></div>
+
+          {/* Smallest Circle (Teal) */}
+          <div
+              className="absolute w-[430px] h-[450px] md:w-[650px] md:h-[650px] lg:w-[1120px] lg:h-[1150px] bg-[#1b9392] rounded-full top-0 bottom-0 right-[-280px] md:right-[-200px] lg:right-[-630px] m-auto"></div>
         </div>
 
         <h1 className={styles.heading}>Log In</h1>
