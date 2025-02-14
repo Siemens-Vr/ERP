@@ -4,7 +4,6 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import styles from "@/app/styles/login/login.module.css";
-import Link from 'next/link';
 
 const Login=()=> {
   const [email, setEmail] = useState("");
@@ -80,18 +79,18 @@ const Login=()=> {
           Log In
         </button>
 
-          <div className={styles.textCenter}>
-            Forgot password?{" "}
-            <Link href="/pages/forgotPassword">
-              <span className="cursor-pointer text-blue-500 underline">Reset here</span>
-            </Link>
-          </div>
-          <div className={styles.textCenter}>
-            I don't have an account?{" "}
-            <Link href="/pages/signup" className={styles.link}>
-            <span className="cursor-pointer text-blue-500 underline">Sign up</span>
-            </Link>
-          </div>
+        <p className={styles.textCenter}>
+          Forgot password?{" "}
+          <a href="/pages/forgotPassword" className={styles.link}>
+            Reset here
+          </a>
+        </p>
+        <p className={styles.textCenter}>
+          I don't have an account?{" "}
+          <a href="/pages/signup" className={styles.link}>
+            Sign up
+          </a>
+        </p>
         </form>
       </div>
   );
