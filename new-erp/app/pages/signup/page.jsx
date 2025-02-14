@@ -73,7 +73,8 @@ export default function Signup() {
             className="absolute w-[430px] h-[450px] md:w-[650px] md:h-[650px] lg:w-[1120px] lg:h-[1150px] bg-[#1b9392] rounded-full top-0 bottom-0 left-[-280px] md:left-[-200px] lg:left-[-630px] m-auto"
         ></div>
       </div>
-
+        
+      <div className="relative z-50">
       <h1 className="text-3xl font-bold mb-6">Sign Up</h1>
       <form onSubmit={handleSignup} className="bg-white p-6 rounded-lg shadow-md w-96">
         
@@ -165,6 +166,7 @@ export default function Signup() {
           </a>
         </p>
       </form>
+      </div>
     </div>
   );
 }

@@ -13,6 +13,7 @@
 
 
 .backgroundCircles {
+  pointer-events: none;
   position: absolute;
   top: 0;
   right: 0; /* Moves the circles to the right */
@@ -137,6 +138,9 @@
 
 
   .formContainer {
+    z-index: 10;
+    position: relative;
+    background: white; 
     background-color: white;
     padding: 1.5rem;
     border-radius: 0.5rem;
@@ -178,7 +182,7 @@
   .eyeIcon {
     position: absolute;
     top: 2.5rem;
-    right: 0.75rem;
+    right: 1.5rem; 
     cursor: pointer;
     color: #6b7280;
   }
@@ -203,6 +207,7 @@
   }
   
   .link {
+    cursor: pointer;
     color: #3b82f6;
     text-decoration: none;
   }
